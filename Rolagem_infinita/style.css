@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #594C3B;
+}
+#container{
+  max-width: calc(100vw - 100px);
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+#container img{
+  max-width: 300px;
+  border-radius: 5px;
+  margin: 10px;
+}
