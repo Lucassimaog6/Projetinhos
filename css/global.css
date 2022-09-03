@@ -21,15 +21,44 @@ body {
 
 /* HEADER */
 header {
+	display: flex;
+	justify-content: space-between;
 	padding: 30px;
 	text-align: center;
 }
 
-header>a {
-	/* Não teve outra opção plausível */
+#theme-switcher {
+	position: relative;
+}
+
+#menu {
+	background: var(--secondary);
+	border-radius: 5px;
+	padding: 5px;
+}
+
+#dropdown {
+	animation: growDown 100ms ease-in-out forwards;
+	transform-origin: top center;
+
+	display: none;
 	position: absolute;
-	top: 30px;
-	right: 30px;
+	background-color: var(--disabled);
+	min-width: 100px;
+	border-radius: 10px;
+	color: var(--text);
+	overflow: hidden;
+	transition: all 500ms;
+}
+
+#dropdown>p {
+	padding: 10px;
+}
+
+#dropdown>p:hover {
+	cursor: pointer;
+	background-color: var(--secondary);
+	color: var(--primary);
 }
 
 path{
@@ -46,4 +75,17 @@ a:hover path{
 
 header>p {
 	line-height: 4;
+}
+@keyframes growDown {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: .7;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }

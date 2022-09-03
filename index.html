@@ -7,11 +7,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="/css/global.css">
 	<link rel="stylesheet" href="/css/index.css">
+	<script defer src="/js/global.js"></script>
 	<title>Projetinhos</title>
 </head>
 
 <body>
 	<header>
+		<div onclick="drop()" id="theme-switcher">
+			<div id="menu">
+				<svg xmlns="http://www.w3.org/2000/svg" width="30" height="28" preserveAspectRatio="xMidYMid meet"
+					viewBox="0 0 16 16">
+					<path fill="none" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+						d="M2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5" />
+				</svg>
+			</div>
+			<div id="dropdown"></div>
+		</div>
+		<div>
+			<h1 id="title">Projetinhos</h1>
+			<p>Pequenos projetos, bem aleatórios :)</p>
+		</div>
 		<a href="https://github.com/Lucassimaog6/Projetinhos">
 			<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" preserveAspectRatio="xMidYMid meet"
 				viewBox="0 0 24 24">
@@ -20,8 +35,6 @@
 					clip-rule="evenodd" />
 			</svg>
 		</a>
-		<h1 id="title">Projetinhos</h1>
-		<p>Pequenos projetos, bem aleatórios :)</p>
 	</header>
 	<main>
 		<section onclick="location.href='/gatinhos.html'">
