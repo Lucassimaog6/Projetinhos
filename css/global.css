@@ -1,0 +1,49 @@
+:root {
+	--primary: #5E412F;
+	--secondary: #78C0A8;
+	--text: #FFFFFF;
+	--disabled: #D4D4D4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	color: var(--text);
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background: var(--primary);
+}
+
+/* HEADER */
+header {
+	padding: 30px;
+	text-align: center;
+}
+
+header>a {
+	/* Não teve outra opção plausível */
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+
+path{
+	transition: all 500ms;
+}
+a:hover path{
+	fill: var(--secondary);
+}
+
+#title {
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+
+header>p {
+	line-height: 4;
+}
