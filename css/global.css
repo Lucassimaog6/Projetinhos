@@ -89,3 +89,8 @@ header>p {
 		opacity: 1;
 	}
 }
+@media screen and (max-width: 600px) {
+	#title {
+		font-size: 1.7rem;
+	}
+}
