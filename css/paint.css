@@ -51,6 +51,21 @@ aside svg {
 	background: #fff;
 }
 
+#slider{
+	appearance: none;
+	height: 10px;
+	background: var(--text);
+	border-radius: 10px;
+}
+
+#slider::-webkit-slider-thumb{
+	appearance: none;
+	width: 10px;
+	height: 20px;
+	background: var(--primary);
+	border-radius: 10px;
+}
+
 @media screen and (max-width: 800px) {
 	main {
 		height: calc(100vh - 140px);
