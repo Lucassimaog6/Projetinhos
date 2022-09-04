@@ -1,0 +1,83 @@
+main {
+	display: grid;
+	grid-template-columns: 300px 1fr;
+	grid-template-areas: "aside canvas";
+	height: calc(100vh - 170px);
+	align-items: center;
+}
+
+aside {
+	grid-area: aside;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	background: var(--secondary);
+}
+
+aside div {
+	transition: background 500ms;
+	border-radius: 10px;
+	margin: 10px 0;
+	padding: 10px 0;
+	display: flex;
+	align-items: center;
+}
+
+aside div:hover {
+	background: rgba(0, 0, 0, .2);
+}
+
+aside input {
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+aside svg {
+	margin: 0 10px;
+}
+
+#color{
+	width: 0px;
+	height: 0px;
+	margin: 0;
+}
+.canvas {
+	grid-area: canvas;
+
+	border-radius: 10px;
+	overflow: hidden;
+	width: 95%;
+	height: 95%;
+	background: #fff;
+}
+
+@media screen and (max-width: 800px) {
+	main {
+		height: calc(100vh - 140px);
+		grid-template-columns: 1fr;
+		grid-template-rows: 100px 1fr;
+		grid-template-areas: "aside"
+			" canvas ";
+	}
+
+	aside {
+		padding: 0;
+		margin: 0 auto;
+		width: 95%;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	aside p {
+		display: none;
+	}
+
+	aside svg {
+		width: 30px;
+	}
+
+	.canvas {
+		height: 100%;
+		margin: 0 auto;
+	}
+}
