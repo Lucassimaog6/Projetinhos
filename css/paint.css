@@ -2,7 +2,7 @@ main {
 	display: grid;
 	grid-template-columns: 300px 1fr;
 	grid-template-areas: "aside canvas";
-	height: calc(100vh - 220px);
+	height: calc(100vh - 150px);
 	align-items: center;
 }
 
@@ -68,11 +68,11 @@ aside svg {
 
 @media screen and (max-width: 800px) {
 	main {
-		height: calc(100vh - 140px);
+		height: calc(100vh - 180px);
 		grid-template-columns: 1fr;
 		grid-template-rows: 100px 1fr;
 		grid-template-areas: "aside"
-			" canvas ";
+							" canvas ";
 	}
 
 	aside {
@@ -92,7 +92,7 @@ aside svg {
 	}
 
 	.canvas {
-		height: 100%;
+		height: 90%;
 		margin: 0 auto;
 	}
 }
